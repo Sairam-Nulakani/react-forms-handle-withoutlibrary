@@ -13,3 +13,16 @@ label {
   font-size: 12px;
   color: gray;
 }
+span {
+  font-size: 12px;
+  padding: 3px;
+  color: red;
+  display: none;
+}
+input:invalid[touched="true"] ~ span {
+  display: block;
+}
+
+input:invalid[touched="true"] {
+  border: 1px solid red;
+}
